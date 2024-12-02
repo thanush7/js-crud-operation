@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="container">
+      <button id="btn">add item</button>
+      <div class="pop-overlay" id="popup">
+        <!-- <div id="closeup">X</div> -->
+        <form id="formId">
+          <div>
+            <label for="">name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="check">
+            <label for="">active</label>
+            <input type="checkbox" id="box" required />
+          </div>
+          <input type="submit" />
+        </form>
+      </div>
+    </div>
+
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Active</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="dataList"></tbody>
+      </table>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
